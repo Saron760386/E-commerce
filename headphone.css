@@ -1,0 +1,659 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  border: 1px solid black;
+}
+.container {
+  width: 100%;
+  height: 55vh;
+  /* border: 1px solid red; */
+  font-family: poppins, sans-serif;
+  /* background-color: ; */
+  display: flex;
+  flex-direction: column;
+}
+header {
+  width: 100%;
+  height: 16vh;
+  /* border: 1px solid red; */
+  background-color: rgb(16, 16, 16);
+  display: flex;
+  justify-content: center;
+}
+.items {
+  width: 83%;
+  height: 16vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+.logo {
+  /* border: 1px solid red; */
+}
+.logo h2 {
+  color: #fff;
+  font-size: 25px;
+}
+.list {
+  /* border: 1px solid red; */
+}
+.list ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+.list ul li {
+  letter-spacing: 1px;
+  /* border: 1px solid green; */
+}
+.list ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+.list ul li a:hover {
+  color: rgb(218, 155, 39);
+  transition: 0.5s ease;
+}
+.card_shooping {
+  width: 12%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* border: 1px solid red; */
+}
+.card_shooping i {
+  color: #fff;
+}
+.headphone_content {
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(16, 16, 16);
+  align-items: center;
+}
+.headphone_content h1 {
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  font-family: poppins, sans-serif;
+}
+.headphone_border {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.headphone_image {
+  width: 70%;
+  height: 68vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  /* border: 1px solid green; */
+}
+.headphone_image img {
+  width: 85%;
+  height: 65vh;
+  border-radius: 15px;
+}
+.headphone_heading {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid blue; */
+}
+.headphone_text {
+  width: 85%;
+  height: 67vh;
+  /* border: 1px solid red; */
+}
+.headphone_text h5 {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: 200;
+  font-size: 15px;
+  /* border: 1px solid red; */
+  color: rgb(255, 148, 109);
+  letter-spacing: 8px;
+}
+.headphone_text h2 {
+  width: 60%;
+  height: 20vh;
+  letter-spacing: 2px;
+  display: flex;
+  color: rgb(0, 0, 0);
+  align-items: flex-end;
+  line-height: 45px;
+  font-size: 40px;
+  /* border: 1px solid blue; */
+}
+.headphone_text p {
+  width: 85%;
+  height: 20vh;
+  font-size: 13px;
+  display: flex;
+  line-height: 23px;
+  align-items: flex-end;
+  color: rgb(143, 143, 143);
+  letter-spacing: 1px;
+  /* border: 1px solid green; */
+  font-weight: 500;
+}
+.btn5 {
+  width: 50%;
+  height: 14vh;
+  display: flex;
+  align-items: flex-end;
+  /* border: 1px solid orange; */
+}
+.btn5 button {
+  width: 60%;
+  height: 8vh;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: rgb(216, 125, 74);
+  border: none;
+  color: #fff;
+}
+.btn5 button:hover {
+  opacity: 0.9;
+}
+article {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  /* border: 1px solid blue; */
+  justify-content: center;
+  align-items: center;
+  font-family: poppins, sans-serif;
+}
+.xx59_border {
+  width: 73%;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  /* border: 1px solid red; */
+}
+.xx59_content {
+  width: 50%;
+  height: 60vh;
+  /* border: 1px solid green; */
+}
+.xx59_content h1 {
+  width: 60%;
+  height: 20vh;
+  letter-spacing: 2px;
+  display: flex;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  line-height: 42px;
+  font-size: 40px;
+  /* border: 1px solid yellowgreen; */
+}
+.xx59_content p {
+  width: 85%;
+  height: 18vh;
+  font-size: 12.5px;
+  display: flex;
+  line-height: 23px;
+  align-items: flex-end;
+  color: rgb(143, 143, 143);
+  letter-spacing: 1px;
+  /* border: 1px solid green; */
+  font-weight: 200;
+  /* border: 1px solid red; */
+}
+.btn6 {
+  width: 50%;
+  height: 14vh;
+  display: flex;
+  align-items: flex-end;
+}
+.btn6 button {
+  width: 65%;
+  height: 8vh;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: rgb(216, 125, 74);
+  border: none;
+  color: #fff;
+}
+.btn6 button:hover {
+  opacity: 0.9;
+}
+.xx59_image {
+  width: 50%;
+  height: 70vh;
+  justify-content: flex-end;
+  display: flex;
+  /* border: 1px solid red; */
+}
+.xx59_image img {
+  width: 80%;
+  height: 65vh;
+  border-radius: 15px;
+}
+aside {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(250, 250, 250);
+  font-family: poppins, sans-serif;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.xx99_border {
+  width: 73%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid blue; */
+}
+.xx99_image {
+  width: 50%;
+  height: 70vh;
+  justify-content: flex-start;
+  display: flex;
+  /* border: 1px solid green; */
+}
+.xx99_image img {
+  width: 80%;
+  height: 65vh;
+  border-radius: 15px;
+}
+.xx99_content {
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.xx99_text {
+  width: 85%;
+  height: 55vh;
+  /* border: 1px solid green; */
+}
+.xx99_text h1 {
+  width: 80%;
+  height: 18vh;
+  letter-spacing: 2px;
+  display: flex;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  line-height: 42px;
+  font-size: 40px;
+  /* border: 1px solid red; */
+}
+.xx99_text p {
+  width: 100%;
+  height: 20vh;
+  font-size: 12.5px;
+  display: flex;
+  line-height: 23px;
+  align-items: flex-end;
+  color: rgb(143, 143, 143);
+  letter-spacing: 1px;
+  /* border: 1px solid green; */
+  font-weight: 200;
+}
+.btn7 {
+  width: 50%;
+  height: 13vh;
+  display: flex;
+  align-items: flex-end;
+}
+.btn7 button {
+  width: 75%;
+  height: 8vh;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: rgb(216, 125, 74);
+  border: none;
+  color: #fff;
+}
+.btn7 button:hover {
+  opacity: 0.9;
+}
+.collective_items {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  font-family: poppins, sans-serif;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(250, 250, 250);
+}
+.properties {
+  width: 80%;
+  height: 50vh;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid white; */
+}
+.headphone {
+  width: 31%;
+  height: 30vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+  padding-bottom: 30px;
+  /* border: 1px solid blue; */
+}
+.headphone img {
+  width: 50%;
+  /* border: 1px solid white; */
+}
+.headphone h2 {
+  width: 50%;
+  height: 100%;
+  font-size: 16px;
+  /* border: 1px solid blue; */
+  letter-spacing: 2px;
+  color: black;
+  text-align: center;
+}
+.headphone a {
+  text-decoration: none;
+  /* border: 1px solid red; */
+  color: gray;
+  padding-top: 10px;
+  letter-spacing: 1px;
+  display: flex;
+  gap: 11px;
+  /* border-bottom-width: 30px; */
+  font-size: 15px;
+  /* padding-top: 20px; */
+}
+.headphone a:hover {
+  color: rgb(218, 155, 39);
+  transition: 0.5s ease;
+}
+.headphone a span {
+  /* font-size: 15px; */
+  color: rgb(231, 81, 27);
+}
+.speakers {
+  width: 31%;
+  height: 30vh;
+  display: flex;
+  border-radius: 10px;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  /* border: 1px solid blue; */
+}
+.speakers img {
+  width: 30%;
+  position: relative;
+  bottom: 60px;
+  /* border: 1px solid red; */
+}
+.speakers h2 {
+  width: 50%;
+  height: 100%;
+  font-size: 17px;
+  /* border: 1px solid blue; */
+  letter-spacing: 2px;
+  position: relative;
+  bottom: 31px;
+  color: black;
+  text-align: center;
+}
+.speakers a {
+  text-decoration: none;
+  /* border: 1px solid red; */
+  color: gray;
+  /* padding-bottom: 60px; */
+  letter-spacing: 1px;
+  display: flex;
+  gap: 11px;
+  position: relative;
+  bottom: 30px;
+  /* border-bottom-width: 30px; */
+  font-size: 15px;
+  /* padding-top: 20px; */
+}
+.speakers a:hover {
+  color: rgb(218, 155, 39);
+  transition: 0.5s ease;
+}
+.speakers a span {
+  /* font-size: 15px; */
+  color: rgb(231, 81, 27);
+}
+.earphone {
+  width: 31%;
+  height: 30vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  padding-bottom: 31px;
+  background-color: rgb(240, 240, 240);
+  /* border: 1px solid blue; */
+}
+.earphone img {
+  width: 50%;
+  /* border: 1px solid blue; */
+}
+.earphone h2 {
+  width: 50%;
+  height: 100%;
+  font-size: 17px;
+  /* border: 1px solid blue; */
+  letter-spacing: 2px;
+  color: black;
+  text-align: center;
+}
+.earphone a {
+  text-decoration: none;
+  /* border: 1px solid red; */
+  color: gray;
+  padding-top: 9px;
+  letter-spacing: 1px;
+  display: flex;
+  gap: 11px;
+  /* border-bottom-width: 30px; */
+  font-size: 15px;
+  /* padding-top: 20px; */
+}
+.earphone a:hover {
+  color: rgb(218, 155, 39);
+  transition: 0.5s ease;
+}
+.earphone a span {
+  /* font-size: 15px; */
+  color: rgb(231, 81, 27);
+}
+.e-commerce_content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(250, 250, 250);
+  justify-content: center;
+}
+.Content_text {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.Text {
+  width: 41%;
+  height: 65vh;
+  /* border: 1px solid blue; */
+}
+.Text h1 {
+  width: 80%;
+  height: 25vh;
+  font-family: poppins, sans-serif;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: 2px;
+  color: black;
+  font-size: 40px;
+  /* border: 1px solid red; */
+}
+.Text h1 span {
+  color: rgb(216, 125, 74);
+}
+.Text p {
+  width: 99%;
+  height: 45vh;
+  font-size: 14.9px;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 100;
+  font-family: poppins, sans-serif;
+  color: rgb(170, 170, 170);
+  /* border: 1px solid blue; */
+}
+.E-commerce_image {
+  width: 70%;
+  height: 80vh;
+  display: flex;
+  justify-content: flex-end;
+  /* border: 1px solid black; */
+}
+.E-commerce_image img {
+  width: 77%;
+  height: 78vh;
+  border-radius: 10px;
+}
+footer {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: rgb(250, 250, 250);
+  align-items: center;
+}
+.end_audiophile {
+  width: 100%;
+  height: 60vh;
+  background-color: rgb(16, 16, 16);
+  color: #fff;
+  display: flex;
+  /* border: 1px solid blue; */
+}
+.audiophile_content {
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-end;
+  /* border: 1px solid green; */
+}
+.audiophile_content h2 {
+  width: 79%;
+  height: 17.5vh;
+  font-family: "Rubiks", sans-serif;
+  font-weight: 800;
+  font-size: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  letter-spacing: 0.5px;
+  /* border: 1px solid red; */
+}
+.audiophile_content p {
+  width: 79%;
+  height: 28vh;
+  font-family: poppins, sans-serif;
+  color: rgb(158, 156, 156);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  justify-content: center;
+  /* border: 1px solid blue; */
+}
+.audiophile_content h5 {
+  width: 79%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(179, 175, 175);
+  letter-spacing: 1px;
+  /* border: 1px solid red; */
+}
+.audiophile_list {
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid blueviolet; */
+}
+.audiophile_list ol {
+  width: 80%;
+  height: 15vh;
+  display: flex;
+  gap: 40px;
+  align-items: flex-end;
+  /* border: 1px solid red; */
+}
+.audiophile_list ol li {
+  list-style: none;
+}
+.audiophile_list ol li a {
+  font-weight: 500;
+  display: flex;
+  font-size: 14.5px;
+  letter-spacing: 1px;
+  font-family: poppins, sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+}
+.audiophile_list ol li a:hover {
+  color: rgb(218, 155, 39);
+  transition: 0.5s ease;
+}
+.E-commerce_logo {
+  width: 53%;
+  height: 25vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 30px;
+}
