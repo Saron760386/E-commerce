@@ -5,6 +5,7 @@ const container = document.querySelector(".container");
 message.addEventListener("click", () => {
   if (number.style.display == "block" || number.style.display == "none") {
     number.style.display = "inline-block";
+    qtylabel.style.display = "none";
     return true;
   } else {
     number.style.display = "none";
@@ -24,6 +25,7 @@ const increment = document.getElementById("increment_fun");
 const numbervalue = document.getElementById("numberid");
 const cartId = document.getElementById("cart_id");
 const init = document.getElementById("init");
+const totalvalue = document.getElementById("total");
 let proprice = 2999;
 let initalnumber = 0;
 let totalprice;
@@ -34,6 +36,7 @@ increment.addEventListener("click", () => {
   init.textContent = initalnumber;
   totalprice = proprice * initalnumber;
   numbervalue.textContent = "$" + totalprice;
+  totalvalue.textContent = "$" + totalprice;
   // console.log(totalprice);
 });
 
@@ -52,6 +55,7 @@ decrement.addEventListener("click", () => {
 });
 // add to cart
 const ideal = document.getElementById("Cart_ideal");
+const add_headphone = document.getElementById("add_head_list");
 const number1 = document.getElementById("cart_dail");
 const store = document.getElementById("Cart_store");
 const qtylabel = document.querySelector(".qtycard_add");
@@ -65,12 +69,16 @@ store.addEventListener("click", () => {
 
 // Add to cart a increment& decrement
 let inital_value = 0;
+let correctValue;
 document.getElementById("inc_add").addEventListener("click", () => {
+  const initase = document.querySelector(".inito");
   inital_value++;
+  // initialtext.textContent=inital_value;
   init.innerText = inital_value;
+  console.log(initialtext);
 });
 const dec = document.getElementById("dec_sub").addEventListener("click", () => {
-  if (inital_value > 1) {
+  if (inital_value > 1 == initialtext.leangth) {
     inital_value--;
     init.innerText = inital_value;
     return true;
