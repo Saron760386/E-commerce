@@ -28,15 +28,9 @@ header {
   justify-content: space-between;
   border-bottom: 1px solid gray;
 }
-.logo {
-  /* border: 1px solid red; */
-}
 .logo h2 {
   color: #fff;
   font-size: 25px;
-}
-.list {
-  /* border: 1px solid red; */
 }
 .list ul {
   list-style: none;
@@ -61,7 +55,7 @@ header {
   height: 5vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .card_shooping i {
   font-size: 20px;
@@ -69,6 +63,103 @@ header {
 }
 .card_shooping i:hover {
   cursor: pointer;
+}
+.Cart_details {
+  width: 96%;
+  height: 80vh;
+  position: absolute;
+  opacity: 0.9;
+  display: flex;
+  /* align-items: center; */
+  margin-top: 100px;
+  /* justify-content: center; */
+  /* border: 1px solid red; */
+}
+.cart_detail_border {
+  width: 97%;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-end;
+  /* border: 1px solid blue; */
+}
+.cart_content_detail {
+  width: 30%;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  font-family: poppins, sans-serif;
+  /* border: 1px solid green; */
+  background-color: #ffffff;
+  
+}
+.head {
+  width: 84%;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+  /* border: 1px solid red; */
+}
+.head h3 {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.head h5 {
+  color: gray;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1;
+  cursor: pointer;
+  border-bottom: 2px solid gray;
+}
+.cart_list {
+  width: 84%;
+  height: 15vh;
+  /* border: 1px solid red; */
+}
+.end_total {
+  width: 84%;
+  height: 15vh;
+  /* border: 1px solid blue; */
+}
+.total {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid green; */
+}
+.total h4 {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(152, 152, 152);
+}
+.total h5 {
+  color: rgb(15, 15, 15);
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.btn_empty {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+}
+.btn_empty button {
+  width: 100%;
+  height: 8vh;
+  color: #ffffff;
+  font-size: 15px;
+  border: none;
+  font-weight: 500;
+  background-color: rgb(151, 151, 151);
+}
+.btn_empty button:hover {
+  background-color: rgb(216, 125, 74);
 }
 .main_page {
   width: 100%;
@@ -152,10 +243,6 @@ header {
   border: none;
   outline: none;
   background-color: rgb(216, 125, 74);
-  color: #ffffff;
-  font-size: 12px;
-  letter-spacing: 1.5px;
-  font-weight: 500;
 }
 .btn button:hover {
   cursor: pointer;
@@ -175,11 +262,11 @@ header {
 }
 .main_headphone {
   width: 60%;
-  height: auto;
+  height: 90vh;
   /* border: 1px solid red; */
 }
 .main_headphone img {
-  width: 80vh;
+  width: 100%;
   height: 90vh;
 }
 .wrapper {
@@ -234,16 +321,16 @@ header {
   display: flex;
   gap: 11px;
   /* border-bottom-width: 30px; */
-  font-size: 15px;
+  font-size: 14px;
   /* padding-top: 20px; */
-}
-.headphone a span {
-  /* font-size: 15px; */
-  color: rgb(231, 81, 27);
 }
 .headphone a:hover {
   color: rgb(218, 155, 39);
   transition: 0.5s ease;
+}
+.headphone a span {
+  /* font-size: 15px; */
+  color: rgb(231, 81, 27);
 }
 .speakers {
   width: 31%;
@@ -284,16 +371,16 @@ header {
   position: relative;
   bottom: 30px;
   /* border-bottom-width: 30px; */
-  font-size: 15px;
+  font-size: 14px;
   /* padding-top: 20px; */
-}
-.speakers a span {
-  /* font-size: 15px; */
-  color: rgb(231, 81, 27);
 }
 .speakers a:hover {
   color: rgb(218, 155, 39);
   transition: 0.5s ease;
+}
+.speakers a span {
+  /* font-size: 15px; */
+  color: rgb(231, 81, 27);
 }
 .earphone {
   width: 31%;
@@ -329,16 +416,16 @@ header {
   display: flex;
   gap: 11px;
   /* border-bottom-width: 30px; */
-  font-size: 15px;
+  font-size: 14px;
   /* padding-top: 20px; */
-}
-.earphone a span {
-  /* font-size: 15px; */
-  color: rgb(231, 81, 27);
 }
 .earphone a:hover {
   color: rgb(218, 155, 39);
   transition: 0.5s ease;
+}
+.earphone a span {
+  /* font-size: 15px; */
+  color: rgb(231, 81, 27);
 }
 article {
   width: 100%;
@@ -426,7 +513,14 @@ article {
   color: #fff;
 }
 .btn2 button:hover {
-  opacity: 0.8;
+  opacity: 0.9;
+}
+.btn2 button a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  color: #fff;
 }
 .zx7_speaker {
   width: 100%;
@@ -475,21 +569,24 @@ article {
   width: 54%;
   height: 8vh;
   border: 1px solid black;
-  color: black;
   background-color: rgb(167, 167, 167);
-  font-weight: 500;
-  font-size: 14px;
 }
-.btn3 button:hover {
+.btn3 button a:hover {
   background-color: black;
   color: #fff;
+}
+.btn3 button a {
+  padding: 16px 29.8px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
 }
 .zx7_image {
   width: 60%;
   height: 52vh;
   display: flex;
   justify-content: flex-end;
-  /* border: 1px solid yellow; */
 }
 .zx7_image_border {
   width: 90%;
@@ -549,24 +646,29 @@ article {
   /* border: 1px solid red; */
 }
 .btn4 {
-  width: 60%;
-  height: 11vh;
+  width: 70%;
+  height: 10vh;
   display: flex;
-  align-items: flex-end;
-  /* border: 1px solid blue; */
+  align-items: center;
+  /* border: 1px solid green; */
 }
 .btn4 button {
-  width: 60%;
+  width: 54%;
   height: 8vh;
   border: 1px solid black;
-  color: black;
   background-color: rgb(241, 241, 241);
-  font-weight: 500;
-  font-size: 14px;
 }
-.btn4 button:hover {
+.btn4 button a:hover {
   background-color: black;
   color: #fff;
+}
+.btn4 button a {
+  padding: 16px 27.5px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  /* border: 1px solid red; */
+  font-size: 14px;
 }
 .e-commerce_content {
   width: 100%;

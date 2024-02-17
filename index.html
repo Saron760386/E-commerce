@@ -30,17 +30,43 @@
             </div>
             <div class="list">
               <ul>
-                <li><a href="Home.html">HOME</a></li>
+                <li>
+                  <a href="Home.html" style="color: rgb(218, 155, 39)">HOME</a>
+                </li>
                 <li><a href="Headphone.html">HEADPHONES</a></li>
                 <li><a href="speaker.html">SPEAKERS</a></li>
                 <li><a href="earphone.html">EARPHONES</a></li>
               </ul>
             </div>
             <div class="card_shooping">
-              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <i
+                class="fa fa-shopping-cart"
+                id="cart_shop"
+                aria-hidden="true"
+              ></i>
             </div>
           </div>
         </header>
+        <div class="Cart_details" id="cart_dail" style="display: none">
+          <div class="cart_detail_border">
+            <div class="cart_content_detail">
+              <div class="head">
+                <h3>CART(0)</h3>
+                <h5>Remove all</h5>
+              </div>
+              <div class="cart_list"></div>
+              <div class="end_total">
+                <div class="total">
+                  <h4>TOTAL</h4>
+                  <h5>$0</h5>
+                </div>
+                <div class="btn_empty">
+                  <button>CHECKOUT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="main_page">
           <div class="main_content">
             <div class="contents">
@@ -186,3 +212,4 @@
     </main>
   </body>
 </html>
+<script src="./index.js"></script>

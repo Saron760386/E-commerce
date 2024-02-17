@@ -30,16 +30,44 @@
           <div class="list">
             <ul>
               <li><a href="Home.html">HOME</a></li>
-              <li><a href="Headphone.html">HEADPHONES</a></li>
+              <li>
+                <a href="Headphone.html" style="color: rgb(218, 155, 39)"
+                  >HEADPHONES</a
+                >
+              </li>
               <li><a href="speakers.html">SPEAKERS</a></li>
               <li><a href="Earphones.html">EARPHONES</a></li>
             </ul>
           </div>
           <div class="card_shooping">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <i
+              class="fa fa-shopping-cart"
+              id="cart_shop"
+              aria-hidden="true"
+            ></i>
           </div>
         </div>
       </header>
+      <div class="Cart_details" id="cart_dail" style="display: none">
+        <div class="cart_detail_border">
+          <div class="cart_content_detail">
+            <div class="head">
+              <h3>CART(0)</h3>
+              <h5>Remove all</h5>
+            </div>
+            <div class="cart_list"></div>
+            <div class="end_total">
+              <div class="total">
+                <h4>TOTAL</h4>
+                <h5>$0</h5>
+              </div>
+              <div class="btn_empty">
+                <button>CHECKOUT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="headphone_content">
         <h1>HEADPHONES</h1>
       </div>
@@ -60,7 +88,7 @@
             balanced depth and precision of studio-quality sound.
           </p>
           <div class="btn5">
-            <button>SEE PRODUCT</button>
+            <button><a href="headphoneProduct.html">SEE PRODUCT</a></button>
           </div>
         </div>
       </div>
@@ -75,7 +103,7 @@
             wireless headset is a brilliant companion at home or on the move.
           </p>
           <div class="btn6">
-            <button>SEE PRODUCT</button>
+            <button><a href="whiteHeadphone.html">SEE PRODUCT</a></button>
           </div>
         </div>
         <div class="xx59_image">
@@ -98,7 +126,7 @@
               the go.
             </p>
             <div class="btn7">
-              <button>SEE PRODUCT</button>
+              <button><a href="blackheadphone.html">SEE PRODUCT</a></button>
             </div>
           </div>
         </div>
@@ -109,17 +137,17 @@
         <div class="headphone">
           <img src="./image-headphones.png" alt="" />
           <h2>HEADPHONES</h2>
-          <a href="#">SHOP <span>></span></a>
+          <a href="Headphone.html">SHOP <span>></span></a>
         </div>
         <div class="speakers">
           <img src="./mobile.webp" alt="" />
           <h2>SPEAKERS</h2>
-          <a href="#">SHOP <span>></span></a>
+          <a href="speakers.html">SHOP <span>></span></a>
         </div>
         <div class="earphone">
           <img src="./earphone_main-removebg-preview.png" alt="" />
           <h2>EARPHONES</h2>
-          <a href="#">SHOP <span>></span></a>
+          <a href="Earphones.html">SHOP <span>></span></a>
         </div>
       </div>
     </div>
@@ -176,3 +204,4 @@
     </footer>
   </body>
 </html>
+<script src="./index.js"></script>

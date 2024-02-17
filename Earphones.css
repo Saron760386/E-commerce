@@ -29,15 +29,9 @@ header {
   justify-content: space-between;
   border-bottom: 1px solid gray;
 }
-.logo {
-  /* border: 1px solid red; */
-}
 .logo h2 {
   color: #fff;
   font-size: 25px;
-}
-.list {
-  /* border: 1px solid red; */
 }
 .list ul {
   list-style: none;
@@ -70,6 +64,101 @@ header {
 }
 .card_shooping i:hover {
   cursor: pointer;
+}
+.Cart_details {
+  width: 96%;
+  height: 80vh;
+  position: absolute;
+  opacity: 0.9;
+  display: flex;
+  margin-top: 100px;
+  /* border: 1px solid red; */
+}
+.cart_detail_border {
+  width: 97%;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-end;
+  /* border: 1px solid blue; */
+}
+.cart_content_detail {
+  width: 30%;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  font-family: poppins, sans-serif;
+  /* border: 1px solid green; */
+  background-color: #ffffff;
+}
+.head {
+  width: 84%;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+  /* border: 1px solid red; */
+}
+.head h3 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  /* border: 1px solid red; */
+}
+.head h5 {
+  color: gray;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1;
+  cursor: pointer;
+  border-bottom: 2px solid gray;
+}
+.cart_list {
+  width: 84%;
+  height: 15vh;
+  /* border: 1px solid red; */
+}
+.end_total {
+  width: 84%;
+  height: 15vh;
+  /* border: 1px solid blue; */
+}
+.total {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid green; */
+}
+.total h4 {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(152, 152, 152);
+}
+.total h5 {
+  color: rgb(15, 15, 15);
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.btn_empty {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+}
+.btn_empty button {
+  width: 100%;
+  height: 8vh;
+  color: #ffffff;
+  font-size: 15px;
+  border: none;
+  font-weight: 500;
+  background-color: rgb(151, 151, 151);
+}
+.btn_empty button:hover {
+  background-color: rgb(216, 125, 74);
 }
 .headphone_content {
   /* border: 1px solid blue; */
@@ -178,6 +267,12 @@ header {
 }
 .btn5 button:hover {
   opacity: 0.9;
+}
+.btn5 button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
 }
 .collective_items {
   width: 100%;
