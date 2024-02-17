@@ -159,7 +159,14 @@ header {
 }
 .btn button:hover {
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.9;
+}
+.btn button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
 }
 .main_image {
   width: 50%;
@@ -234,6 +241,10 @@ header {
   /* font-size: 15px; */
   color: rgb(231, 81, 27);
 }
+.headphone a:hover {
+  color: rgb(218, 155, 39);
+  transition: 0.5s ease;
+}
 .speakers {
   width: 31%;
   height: 30vh;
@@ -280,6 +291,10 @@ header {
   /* font-size: 15px; */
   color: rgb(231, 81, 27);
 }
+.speakers a:hover {
+  color: rgb(218, 155, 39);
+  transition: 0.5s ease;
+}
 .earphone {
   width: 31%;
   height: 30vh;
@@ -320,6 +335,10 @@ header {
 .earphone a span {
   /* font-size: 15px; */
   color: rgb(231, 81, 27);
+}
+.earphone a:hover {
+  color: rgb(218, 155, 39);
+  transition: 0.5s ease;
 }
 article {
   width: 100%;
