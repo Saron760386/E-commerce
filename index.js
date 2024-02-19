@@ -6,10 +6,8 @@ message.addEventListener("click", () => {
   if (number.style.display == "block" || number.style.display == "none") {
     number.style.display = "inline-block";
     qtylabel.style.display = "none";
-    return true;
   } else {
     number.style.display = "none";
-    return false;
   }
 });
 // redeirect index page
@@ -26,6 +24,7 @@ const numbervalue = document.getElementById("numberid");
 const cartId = document.getElementById("cart_id");
 const init = document.getElementById("init");
 const totalvalue = document.getElementById("total");
+const Remover = document.getElementById("All_remove");
 let proprice = 2999;
 let initalnumber = 0;
 let totalprice;
@@ -68,24 +67,31 @@ store.addEventListener("click", () => {
 });
 
 // Add to cart a increment& decrement
-let inital_value = 0;
+// let inital_value = 0;
 let correctValue;
 document.getElementById("inc_add").addEventListener("click", () => {
   const initase = document.querySelector(".inito");
-  inital_value++;
+  initalnumber++;
   // initialtext.textContent=inital_value;
-  init.innerText = inital_value;
+  cartId.innerText = initalnumber;
+  init.innerText = initalnumber;
+  totalprice = initalnumber * proprice;
+  totalvalue.innerHTML = "$" + totalprice;
   console.log(initialtext);
 });
 const dec = document.getElementById("dec_sub").addEventListener("click", () => {
-  if (inital_value > 1 == initialtext.leangth) {
-    inital_value--;
-    init.innerText = inital_value;
-    return true;
-  } else {
-    ideal.style.display = "none";
-    return false;
+  if (initalnumber >= 1) {
+    initalnumber--;
   }
+  cartId.innerText = initalnumber;
+  init.innerText = initalnumber;
+  totalprice -= proprice;
+  totalvalue.innerText = totalprice;
+});
+Remover.addEventListener("click", () => {
+  cartId.innerText = 0;
+  totalvalue.innerText = "$" + 0;
+  ideal.style.display = "none";
 });
 
 // location zx9 speakers
