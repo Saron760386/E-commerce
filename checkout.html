@@ -48,116 +48,199 @@
       </header>
       <div class="container_border">
         <div class="back">Go Back</div>
-        <div class="checkOut_fullPage">
-            <h2>CHECKOUT</h2>
-            <div class="biling_Detail">
-              <h4>BILLING DETAILS</h4>
-              <div class="Name_email">
-                <div class="Name">
+        <!--  -->
+        <form class="checkOut_fullPage" id="full_page">
+          <h2>CHECKOUT</h2>
+          <div class="biling_Detail">
+            <h4>BILLING DETAILS</h4>
+            <div class="Name_email">
+              <div class="Name">
+                <div class="userName_err">
                   <p>Name</p>
-                  <input type="text" placeholder="Alexei ward" id="Name" />
+                  <h5 id="Name_error">please enter a valid name</h5>
                 </div>
-                <div class="email">
-                  <p>Email Address</p>
-                  <input
-                    type="email"
-                    name="email"
-                    id="Email"
-                    placeholder="alexei@mail.com"
-                  />
-                </div>
+                <input type="text" placeholder="Alexei ward" id="Name" />
               </div>
-              <div class="phoneNumber">
+              <div class="email">
+                <p>Email Address</p>
+                <input
+                  type="email"
+                  name="email"
+                  id="Email"
+                  required
+                  placeholder="alexei@mail.com"
+                />
+              </div>
+            </div>
+            <div class="phoneNumber">
+              <div class="phone_error" style="display: flex">
                 <p>Phone Number</p>
+                <h6 style="display: none" id="errormessage_phone">
+                  10 digit number required
+                </h6>
+              </div>
+              <input
+                type="number"
+                name="PhoneNumber"
+                id="PhoneNumber"
+                placeholder="+1 202-555-0136"
+              />
+            </div>
+          </div>
+          <div class="shooping_info">
+            <h4>SHIPPING INFO</h4>
+            <div class="Address">
+              <p>Your Address</p>
+              <input
+                type="text"
+                name="Address"
+                id="Address"
+                placeholder="1137 Williams Avenue"
+              />
+            </div>
+            <div class="zipCode_city">
+              <div class="zipcode">
+                <div class="zip_code_error">
+                  <p>ZIP Code</p>
+                  <div class="code_error">
+                    <h5 id="zip_error1">Must be at least 5 digits</h5>
+                    <h6 id="zip_erro2">Must be less than least 10 digits</h6>
+                  </div>
+                </div>
                 <input
                   type="number"
-                  name="PhoneNumber"
-                  id="PhoneNumber"
-                  placeholder="+1 202-555-0136"
+                  name="Zip code"
+                  id="Zip_code"
+                  placeholder="10001"
+                />
+              </div>
+              <div class="city">
+                <p>City</p>
+                <input
+                  type="text"
+                  name="city"
+                  id="City"
+                  placeholder="New York"
                 />
               </div>
             </div>
-            <div class="shooping_info">
-              <h4>SHIPPING INFO</h4>
-              <div class="Address">
-                <p>Your Address</p>
-                <input
-                  type="text"
-                  name="Address"
-                  id="Address"
-                  placeholder="1137 Williams Avenue"
-                />
-              </div>
-              <div class="zipCode_city">
-                <div class="zipcode">
-                  <p>ZIP Code</p>
-                  <input
-                    type="number"
-                    name="Zip code"
-                    id="Zip_code"
-                    placeholder="10001"
-                  />
-                </div>
-                <div class="city">
-                  <p>City</p>
-                  <input
-                    type="text"
-                    name="city"
-                    id="City"
-                    placeholder="New York"
-                  />
-                </div>
-              </div>
-              <div class="country">
-                <p>Country</p>
-                <input
-                  type="text"
-                  name="Country"
-                  id="Country"
-                  placeholder="United States"
-                />
-              </div>
+            <div class="country">
+              <p>Country</p>
+              <input
+                type="text"
+                name="Country"
+                id="Country"
+                placeholder="United States"
+              />
             </div>
-            <div class="payment_details">
-              <h4>PAYMENT DETAILS</h4>
-              <div class="payment_methods">
-                <div class="payment_Name">
-                  <p>Payment Method</p>
-                </div>
-                <div class="paymentMethod_Names">
-                  <div class="e_money">
-                    <input type="radio" name="" id="E-money" />
+          </div>
+          <div class="payment_details">
+            <h4>PAYMENT DETAILS</h4>
+            <div class="payment_methods">
+              <div class="payment_Name">
+                <p>Payment Method</p>
+              </div>
+              <div class="paymentMethod_Names">
+                <div class="e_money">
+                  <div class="e-money_input">
+                    <input type="radio" name="radio" id="E-money" />
+                  </div>
+                  <div class="Money_name">
                     <p>e-Money</p>
                   </div>
-                  <div class="cashOn_delivery">
-                    <input type="radio" name="" id="CashOn_Delivery" />
+                </div>
+                <div class="cashOn_delivery">
+                  <div class="cash_input">
+                    <input type="radio" name="radio" id="CashOn_Delivery" />
+                  </div>
+                  <div class="cash_name">
                     <p>Cash on Delivery</p>
                   </div>
                 </div>
               </div>
-              <div class="e_money_pins">
-                <div class="Money_Number">
-                  <p>e-Money Number</p>
-                  <input
-                    type="number"
-                    name=""
-                    id="e-money_number"
-                    placeholder="238521993"
+            </div>
+            <div class="e_money_pins" id="e_money_pins">
+              <div class="Money_Number">
+                <p>e-Money Number</p>
+                <input
+                  type="number"
+                  name=""
+                  id="e-money_number"
+                  placeholder="238521993"
+                />
+              </div>
+              <div class="money_pins">
+                <p>e-Money PIN</p>
+                <input
+                  type="number"
+                  name=""
+                  id="E-money_pins"
+                  placeholder="6891"
+                />
+              </div>
+            </div>
+            <div class="cash-on-delivery" id="cash_delver_img">
+              <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M46.594 8.438H42.28c-.448 0-.869.213-1.134.574l-2.694 3.674a1.15 1.15 0 1 1-1.848-1.37c2.568-3.53 2.864-3.545 2.864-4.285 0-.779-.636-1.406-1.407-1.406h-5.404a17.658 17.658 0 0 1 9.606-2.813h4.33a1.406 1.406 0 0 0 0-2.812h-4.33c-5.277 0-10.33 2.02-14.142 5.625h-8.34c-.777 0-1.407.63-1.407 1.406v9.938H9.844c-.777 0-1.406.63-1.406 1.406v15.6a14.053 14.053 0 0 0-7.824 3.089 1.406 1.406 0 1 0 1.772 2.185 11.226 11.226 0 0 1 7.048-2.499h3.129c.775 0 1.406.63 1.406 1.406 0 .776-.631 1.407-1.406 1.407H8.436a1.406 1.406 0 0 0 0 2.812h13.728a4.226 4.226 0 0 1-3.977 2.813H1.405a1.406 1.406 0 0 0 0 2.812h16.782c3.395 0 6.236-2.42 6.89-5.625h7.36c.776 0 1.406-.63 1.406-1.406V25.312h9.843c.777 0 1.407-.63 1.407-1.406V11.25h1.5a1.406 1.406 0 0 0 0-2.813ZM33.61 17.599a1.404 1.404 0 0 0-1.172-.63h-3.085c-1.084-1.834.241-4.172 2.381-4.172 2.531 0 3.708 3.115 1.876 4.802ZM21.188 8.437h14.06c-.744 1.03-1.057 1.305-1.352 1.983-4.216-1.779-8.726 2.057-7.559 6.549h-5.15V8.437ZM19.78 19.782h2.813v5.625H19.78v-5.625Zm11.25 19.782h-14.49c.969-2.735-1.07-5.626-3.979-5.626H11.25V19.782h5.719v7.032c0 .776.63 1.406 1.406 1.406H24c.777 0 1.406-.63 1.406-1.407v-7.03h5.625v19.78ZM33.844 22.5v-1.771a5.56 5.56 0 0 0 3.453-4.769 3.954 3.954 0 0 0 3.424-1.611l1.56-2.127V22.5h-8.437Z"
+                  fill="#D87D4A"
+                />
+              </svg>
+              <p>
+                The ‘Cash on Delivery’ option enables you to pay in cash when
+                our delivery courier arrives at your residence. Just make sure
+                your address is correct so that your order will not be
+                cancelled.
+              </p>
+            </div>
+          </div>
+        </form>
+        <!--  -->
+      </div>
+      <aside id="popup">
+        <div class="order_messages">
+          <div class="success_image">
+            <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#D87D4A" cx="32" cy="32" r="32" />
+                <path
+                  stroke="#FFF"
+                  stroke-width="4"
+                  d="m20.754 33.333 6.751 6.751 15.804-15.803"
+                />
+              </g>
+            </svg>
+          </div>
+          <div class="order_head">
+            <h3>THANK YOU FOR YOUR ORDER</h3>
+          </div>
+          <p>You will receive an email confirmation shortly.</p>
+          <div class="order_details">
+            <div class="order_product">
+              <div class="order_image">
+                <div class="order_image_line">
+                  <img
+                    src="./e-commerce-images/image-category-page-preview.jpg"
+                    alt=""
+                    id="order_img"
                   />
                 </div>
-                <div class="money_pins">
-                  <p>e-Money PIN</p>
-                  <input
-                    type="number"
-                    name=""
-                    id="E-money_pins"
-                    placeholder="6891"
-                  />
+                <div class="order_content">
+                  <h5>XX99 MK II</h5>
+                  <p>$2,999</p>
                 </div>
+                <div class="order_count">
+                  <h6>x1</h6>
+                </div>
+              </div>
+              <div class="order_GrandTotal">
+                <h4>GRAND TOTAL</h4>
+                <h3>$2,999</h3>
               </div>
             </div>
           </div>
-      </div>
+        </div>
+      </aside>
     </div>
     <div class="wrapper">
       <div class="wrapper_border">
@@ -165,9 +248,14 @@
         <div class="cart_list">
           <div class="product_lists">
             <div class="product_img">
-              <img src="./e-commerce-images/image-headphones.png" alt="" />
-              <h3>XX99 MK II</h3>
-              <p>$2,999</p>
+              <img
+                src="./e-commerce-images/image-category-page-preview.jpg"
+                alt=""
+              />
+              <div class="products_line">
+                <h3>XX99 MK II</h3>
+                <p>$2,999</p>
+              </div>
             </div>
             <div class="product_numbers">
               <p>x1</p>
@@ -192,7 +280,7 @@
             <h4>$3,049</h4>
           </div>
           <div class="btn1">
-            <button>CONTINUE AND PAY</button>
+            <button id="submit-button">CONTINUE AND PAY</button>
           </div>
         </div>
       </div>
@@ -232,3 +320,4 @@
     </footer>
   </body>
 </html>
+<script src="./CheackOut.js"></script>
