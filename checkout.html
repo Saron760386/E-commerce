@@ -57,12 +57,21 @@
               <div class="Name">
                 <div class="userName_err">
                   <p>Name</p>
-                  <h5 id="Name_error">please enter a valid name</h5>
+                  <h5 id="Name_error">
+                    <i class="fa-solid fa-triangle-exclamation"></i>please enter
+                    a valid name
+                  </h5>
                 </div>
                 <input type="text" placeholder="Alexei ward" id="Name" />
               </div>
               <div class="email">
-                <p>Email Address</p>
+                <div class="email_err">
+                  <p>Email Address</p>
+                  <h5 id="Email_err" style="display: none">
+                    <i class="fa-solid fa-triangle-exclamation"></i>Please enter
+                    a @ simple
+                  </h5>
+                </div>
                 <input
                   type="email"
                   name="email"
@@ -76,6 +85,7 @@
               <div class="phone_error" style="display: flex">
                 <p>Phone Number</p>
                 <h6 style="display: none" id="errormessage_phone">
+                  <i class="fa-solid fa-triangle-exclamation"></i>
                   10 digit number required
                 </h6>
               </div>
@@ -90,7 +100,13 @@
           <div class="shooping_info">
             <h4>SHIPPING INFO</h4>
             <div class="Address">
-              <p>Your Address</p>
+              <div class="address_err">
+                <p>Your Address</p>
+                <h5 id="Address_error">
+                  <i class="fa-solid fa-triangle-exclamation"></i>Please enter a
+                  valid Address
+                </h5>
+              </div>
               <input
                 type="text"
                 name="Address"
@@ -103,15 +119,22 @@
                 <div class="zip_code_error">
                   <p>ZIP Code</p>
                   <div class="code_error">
-                    <h5 id="zip_error1">Must be at least 5 digits</h5>
-                    <h6 id="zip_erro2">Must be less than least 10 digits</h6>
+                    <h5 id="zip_error1">
+                      <i class="fa-solid fa-triangle-exclamation"></i>Must be at
+                      least 5 digits
+                    </h5>
+                    <h6 id="zip_erro2">
+                      <i class="fa-solid fa-triangle-exclamation"></i>Must be
+                      less than least 10 digits
+                    </h6>
                   </div>
                 </div>
                 <input
                   type="number"
-                  name="Zip code"
+                  name="Zip_code"
                   id="Zip_code"
                   placeholder="10001"
+                  required
                 />
               </div>
               <div class="city">
@@ -125,7 +148,13 @@
               </div>
             </div>
             <div class="country">
-              <p>Country</p>
+              <div class="country_err">
+                <p>Country</p>
+                <h5 id="Country_error">
+                  <i class="fa-solid fa-triangle-exclamation"></i>please Enter a
+                  valid Country
+                </h5>
+              </div>
               <input
                 type="text"
                 name="Country"
@@ -161,7 +190,10 @@
             </div>
             <div class="e_money_pins" id="e_money_pins">
               <div class="Money_Number">
-                <p>e-Money Number</p>
+                <div class="emoneyerr">
+                  <p>e-Money Number</p>
+                  <h5 id="Money_error"><i class="fa-solid fa-triangle-exclamation"></i>Must be at least 9 digits</h5>
+                </div>
                 <input
                   type="number"
                   name=""
@@ -170,7 +202,10 @@
                 />
               </div>
               <div class="money_pins">
-                <p>e-Money PIN</p>
+                <div class="moneyPins_error">
+                  <p>e-Money PIN</p>
+                  <h5 id="moneyPin_error"><i class="fa-solid fa-triangle-exclamation"></i>Must be at least 4 digits</h5>
+                </div>
                 <input
                   type="number"
                   name=""

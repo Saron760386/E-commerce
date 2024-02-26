@@ -24,7 +24,7 @@ submit_button.addEventListener("click", () => {
   const Email = document.getElementById("Email");
   const Name = document.getElementById("Name");
   const Address = document.getElementById("Address");
-  const ZipCode = document.getElementById("Zip_code");
+  const ZipCode = document.querySelector('[name="Zip_code"]');
   const City = document.getElementById("City");
   const Country = document.getElementById("Country");
   const e_money = document.getElementById("e-money_number");
@@ -33,11 +33,17 @@ submit_button.addEventListener("click", () => {
   const ziperror1 = document.getElementById("zip_error1");
   const ziperror2 = document.getElementById("zip_erro2");
   const NameErr = document.getElementById("Name_error");
+  const EmailErr = document.getElementById("Email_err");
+  const AddressErr = document.getElementById("Address_error");
+  const Countryerror = document.getElementById("Country_error");
+  const money_error = document.getElementById("Money_error");
+  const moneyPin_err = document.getElementById("moneyPin_error");
+  const EMoneyRadio = document.getElementById("E-money");
+  const cashOnDel = document.getElementById("CashOn_Delivery");
 
   //  Name validation
   if (Name.value.includes(".")) {
     NameErr.style.display = "none";
-    // alert("invalue");
   } else {
     NameErr.style.display = "block";
     // alert("err");
@@ -45,9 +51,9 @@ submit_button.addEventListener("click", () => {
 
   // Email validation
   if (Email.value.includes("@gmail.com")) {
-    // alert("you can successs");
+    EmailErr.style.display = "none";
   } else {
-    // alert(failed);
+    EmailErr.style.display = "block";
   }
   // phone_input_error
   if (phoneError.value.length < 10 || phoneError.value.length > 10) {
@@ -57,11 +63,9 @@ submit_button.addEventListener("click", () => {
   }
   // Address validation
   if (Address.value.includes("/")) {
-    // alert("successed");
-    // Address.style.border = "1px solid green";
-    // Address.style.boxShadow = " 0px 0px 8px green ";
+    AddressErr.style.display = "none";
   } else {
-    Address.style.border = "1px solid red";
+    AddressErr.style.display = "flex";
   }
 
   // zip code validation
@@ -79,19 +83,60 @@ submit_button.addEventListener("click", () => {
   } else {
     ziperror2.style.display = "none";
   }
+  // var zipCodes = [26505, 26501, 26507, 26506];
+
+  // for (i = 0; i <= zipCodes.length - 1; i++) {
+  //   if (ZipCode == zipCodes[i]) {
+  //     ziperror1.style.display = "none";
+  //     break;
+  //   } else {
+  //     ziperror1.style.display = "block";
+  //   }
+  // }
+  // city validation
+  // country validation
+  if (Country.value.includes("India")) {
+    Countryerror.style.display = "none";
+  } else {
+    Countryerror.style.display = "block";
+  }
+  // E-money validatoion
+  if (e_money.value.length < 9 || e_money.value.length > 9) {
+    money_error.style.display = "block";
+  } else {
+    money_error.style.display = "none";
+  }
+
+  // Money_pins validation
+
+  if (money_pins.value.length < 4 || money_pins.value.length > 4) {
+    moneyPin_err.style.display = "block";
+  } else {
+    moneyPin_err.style.display = "none";
+  }
+  // cash or money validation
+  if (e_money_radio.value || cashOnDel.value) {
+    return true;
+  } else {
+    alert("click a radio buttons");
+  }
   if (
     !Name.value.length ||
     !Email.value.length ||
     !phoneError.value.length ||
     !Address.value.length ||
-    !ZipCode.value.length
+    !ZipCode.value.length ||
+    !City.value.length ||
+    !Country.value.length
   ) {
     // value validations
     Email.style.border = "1px solid red";
     Name.style.border = "1px solid red";
     phoneError.style.border = "1px solid red";
     Address.style.border = "1px solid red";
-    // ZipCode.style.border = "1px solid red";
+    // ZipCode.style.border = "1px solid green";
+    City.style.border = "1px solid red";
+    Country.style.border = "1px solid red";
   } else {
   }
   const popup = document.getElementById("popup");
@@ -101,8 +146,18 @@ submit_button.addEventListener("click", () => {
     phoneError.value &&
     Address.value &&
     ZipCode.value &&
-    Email.value.includes("@gmail.com")
+    City.value &&
+    Country.value &&
+    Name.value.includes(".") &&
+    Email.value.includes("@gmail.com") &&
+    Address.value.includes("/") &&
+    phoneError === 10 &&
+    // ZipCode == zipCodes[i] &&
+    Country.value.includes("India")
   ) {
     popup.style.display = "flex";
+  } else {
+    // console.log("err");
+    alert("err");
   }
 });
